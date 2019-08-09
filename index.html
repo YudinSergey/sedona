@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="sedona.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+          integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+            integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+            crossorigin=""></script>
+</head>
+<body>
+<div class="header_container container">
+    <header>
+        <nav class="main_menu">
+            <a href="#">информация</a>
+            <a href="#">фото и видео</a>
+            <a href="#">карта штата</a>
+            <a href="#">гостиницы</a>
+        </nav>
+        <div class="decorate_element"></div>
+    </header>
+</div>
+<div class="baner_container container">
+    <img src="img/Welcome1200.png" alt="Wellcome">
+    <div class="to_the_gorgeous">
+        <div class="decorate_element"></div>
+        <img src="img/to_the_gorgeous1200.png" alt="">
+        <div class="decorate_element"></div>
+    </div>
+    <img src="img/Sedona1200.png" alt="Sedona">
+    <img src="img/Because_the_Grand__Canyon_sucks!1200.png" alt="">
+    <div class="baner_decorate_element"></div>
+</div>
+<section class="about_sedona container">
+    <div class="about_sedona_headline">
+        <h2>СЕДОНА — небольшой городок в АРИЗОНЕ,
+            зАСЛУЖИвающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+    <section class="interesting_facts">
+        <article class="fact title_fact">
+            <div class="information">
+                <h3 class="facts_headline">НАСТОЯЩИЙ
+                    ГОРОДОК</h3>
+                <p class="facts_number">— №1 —</p>
+                <p class="facts_description">СЕДОНА — НЕ АТтРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+            </div>
+            <div class="image"></div>
+        </article>
+        <div class="advertising_panel">
+            <div class="there_is housing">
+                <img src="img/house_img.png" alt="">
+                <h3 class="there_is_name">Жилье</h3>
+                <p class="there_is_description">
+                    Рекомендуем пожить в настоящем мотеле, все как в кино!
+                </p>
+            </div>
+            <div class="there_is eating">
+                <img src="img/burger_img.png" alt="">
+                <h3 class="there_is_name">Еда</h3>
+                <p class="there_is_description">
+                    Всегда заказывайте ФИРМЕННЫЙ БУРГЕР,
+                    Вы НЕ разочаруетесь!
+                </p>
+            </div>
+            <div class="there_is souvenirs">
+                <img src="img/present_img.png" alt="">
+                <h3 class="there_is_name">Сувениры</h3>
+                <p class="there_is_description">
+                    Не только китайского, но и местного производства!
+                </p>
+            </div>
+        </div>
+        <article class="fact title_fact">
+            <div class="image"></div>
+            <div class="information">
+                <h3 class="facts_headline">Там есть мост дьявола</h3>
+                <p class="facts_number">— №2 —</p>
+                <p class="facts_description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+        </article>
+        <div class="other_facts">
+            <div class="fact">
+                <div class="information">
+                    <h3 class="facts_headline">НЕБОЛЬШАЯ
+                        ПЛОЩАДЬ</h3>
+                    <p class="facts_number">— №3 —</p>
+                    <p class="facts_description">ВСЕ достопримеча&shyтельности
+                        находятся очень близко</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="information">
+                    <h3 class="facts_headline">КРАСИВАЯ
+                        ДОРОГА</h3>
+                    <p class="facts_number">— №4 —</p>
+                    <p class="facts_description">ЕХАТЬ В СЕДОНУ ИЗ ЛАС-ВЕГАСА совсем
+                        НЕ СКУЧНО!</p>
+                </div>
+            </div>
+            <div class="fact">
+                <div class="information">
+                    <h3 class="facts_headline">МАЛО
+                        ТУРИСТОВ</h3>
+                    <p class="facts_number">— №5 —</p>
+                    <p class="facts_description">Большинство едет в гранд каньон и толпится там</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+<section class="search_hotel_in_sedona container">
+    <h2 class="search_hotel_headline">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+    <p class="search_hotel_description">Укажите предполагаемые даты поездки,<br>
+        и мы покажем вам лучшие предложения гостиниц в седоне</p>
+    <a href="#" class="search_hotel_button button">ПОИСК ГОСТИНИЦЫ В седоне</a>
+</section>
+<div class="map_wrapper container">
+    <div class="search_hotel_form">
+        <div class="choose_date arrival">
+            <p>Дата заезда:</p>
+            <a class="arrival_date" href="">24 апреля 2019
+                <img src="img/calendar.png" alt="">
+            </a>
+        </div>
+        <div class="choose_date departure">
+            <p>Дата выезда:</p>
+            <a class="date_of_departure" href="">4 июля 2019
+                <img src="img/calendar.png" alt="">
+            </a>
+        </div>
+        <div class="adults_and_children">
+            <div class="adults">
+                <p>Взрослые:</p>
+                <div class="control_panel">
+                    <a id="adults_minus" class="minus" href=#"></a>
+                    <p id="adults_value" class="value">3</p>
+                    <a id="adults_plus" class="plus" href="#"></a>
+                </div>
+            </div>
+            <div class="children">
+                <p>Дети:</p>
+                <div class="control_panel">
+                    <a id="children_minus" class="minus" href=#"></a>
+                    <p id="children_value" class="value">0</p>
+                    <a id="children_plus" class="plus" href="#"></a>
+                </div>
+            </div>
+        </div>
+        <a class="search_button" href="#">Найти</a>
+    </div>
+    <div id="map" class="map container"></div>
+</div>
+
+<footer class="footer container">
+    <a class="hashteg" href="#">#visitsedona</a>
+    <article class="socials">
+        <a class="social twitter" href="#"></a>
+        <a class="social faceboock" href="#"></a>
+        <a class="social youtube" href="#"></a>
+    </article>
+    <a href="#" class="made_in">
+        WEBSITE by
+        <img src="img/html_academy_logo.png" alt="HTML ACADEMY">
+    </a>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
