@@ -1,0 +1,1364 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "PT Sans";
+    src:url(fonts/ptsans.woff);
+}
+
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.mobile_menu{
+    height:200px;
+    background-color:#81b3d2;
+    display:none;
+}
+
+.mobile_menu_item{
+    display:flex;
+    align-items: center;
+    height:50px;
+    text-decoration: none;
+    color:#ffffff;
+    justify-content: center;
+    font-size: 1.125em;
+    font-family: "PT Sans";
+    text-transform: uppercase;
+    font-weight: 700;
+    border-top: 1px solid #9ac2db;
+    border-bottom: 1px solid #678fa8;
+}
+
+.mobile_menu_item:hover{
+    background-color: #669ec0;
+}
+
+.mobile_menu_item:active{
+    background-color: #5496bd;
+}
+
+.mobile_menu #close_button{
+    width:35px;
+    height:35px;
+    position:absolute;
+    background: url("img/close_button.svg")no-repeat;
+    background-size: contain;
+    left:87%;
+    top:1%;
+}
+
+.header_container{
+    padding-left:6%;
+}
+
+header{
+    position: relative;
+}
+
+.main_menu{
+    display:flex;
+    align-items:center;
+    height:56px;
+}
+
+.main_menu_button{
+    display:none;
+    width:23px;
+    padding-top:18px;
+}
+
+.main_menu_button .button_element{
+    height:4px;
+    width:23px;
+    margin-bottom:5px;
+    background-color: #81b3d2;
+}
+
+.main_menu_button .button_element:last-child{
+    margin-bottom:0;
+}
+
+.main_menu a{
+    text-decoration: none;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 700;
+    line-height: 12px;
+    text-transform: uppercase;
+}
+
+.main_menu a:hover{
+    color: #81b3d2;
+}
+
+.main_menu a:active{
+    color:#bdbbbc;
+}
+
+.main_menu a:first-child{
+    margin-right:13%;
+}
+
+.main_menu a:nth-child(2){
+    margin-right:34.3%;
+}
+
+.main_menu a:nth-child(3){
+    margin-right:14.8%;
+}
+
+header .decorate_element{
+    width:138px;
+    height:70px;
+    background:url("img/logo.svg")no-repeat;
+    position: absolute;
+    top:0;
+    left:41%;
+}
+
+.baner_container{
+    background:url("img/sedona_background_image.png")no-repeat;
+    height:508px;
+    background-position: 0% 28%;
+}
+
+.baner_content{
+    height:100%;
+    width:100%;
+    background:url("img/text-sedona-index.svg")no-repeat;
+    background-position: 50% 48%;
+    background-size: 38%;
+    padding-top:452px;
+}
+
+.baner_container .baner_content .baner_decorate_element{
+    height:57px;
+    background: url("img/baner_decoration_element.png") no-repeat center;
+}
+
+.about_sedona .about_sedona_headline{
+    padding-top:61px;
+    text-align: center;
+}
+
+.about_sedona .about_sedona_headline h2{
+    max-width:38%;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 1.3125em;
+    font-weight: 700;
+    line-height: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    margin:0 auto;
+    margin-bottom:35px;
+}
+
+.about_sedona .about_sedona_headline p{
+    color: #333333;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 11px;
+    text-transform: uppercase;
+    margin-bottom:59px;
+}
+
+.about_sedona .interesting_facts .title_fact{
+    background-color: #81b3d2;
+    display:flex;
+}
+
+.about_sedona .interesting_facts .title_fact:first-child .trinagle{
+    width:100%;
+    height:37px;
+    background: url("img/bg-triangle.svg")no-repeat;
+    background-position: 50% 100%;
+    background-size: cover;
+    display: none;
+}
+
+.about_sedona .interesting_facts .other_facts{
+    display:flex;
+    background-color: #f2f2f2;
+}
+
+.about_sedona .interesting_facts .other_facts .fact{
+    width:33.33333333333333%;
+}
+
+.about_sedona .interesting_facts .fact .information{
+    min-height:256px;
+    padding-top:47px;
+    padding-left:4.5%;
+    padding-right:4.5%;
+    text-align:center;
+}
+
+.about_sedona .interesting_facts .title_fact .information{
+    width:33.33333333333333%;
+}
+
+.about_sedona .interesting_facts .title_fact:nth-child(3) .information{
+    padding-left:3.5%;
+    padding-right:3.5%;
+}
+
+.about_sedona .interesting_facts .fact .information .facts_headline{
+    color: #333333;
+    font-family: "PT Sans";
+    font-size: 1.3125em;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    max-width:45%;
+    margin:0 auto;
+    margin-bottom:29px;
+}
+
+.about_sedona .interesting_facts .title_fact .information .facts_headline{
+    color: #ffffff;
+}
+
+.about_sedona .interesting_facts .title_fact:nth-child(3) .information .facts_headline{
+    max-width: 48%;
+    margin-bottom:27px;
+}
+
+.about_sedona .interesting_facts .fact .information .facts_number{
+    color: #333333;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 14px;
+    text-transform: uppercase;
+    margin-bottom:25px;
+}
+
+.about_sedona .interesting_facts .title_fact .information .facts_number{
+    color: #ffffff;
+}
+
+.about_sedona .interesting_facts .fact .information .facts_description{
+    color: #333333;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin:0 auto;
+}
+
+.about_sedona .interesting_facts .title_fact .information .facts_description{
+    color: #ffffff;
+}
+
+.about_sedona .interesting_facts .title_fact:first-child .image{
+    background:url("img/first_fact1200.png")no-repeat;
+    width:66.66666666666667%;
+    height:256px;
+}
+
+.about_sedona .interesting_facts .title_fact:nth-child(3) .image{
+    background:url("img/second_fact1200.png")no-repeat;
+    width:66.66666666666667%;
+    height:256px;
+}
+
+.about_sedona .interesting_facts .other_facts .fact .information{
+    padding-left: 14.5%;
+    padding-right: 14.5%;
+}
+
+.advertising_panel{
+    display:flex;
+    padding-top:60px;
+    padding-left:6.083333333333333%;
+    padding-right:3.5%;
+    padding-bottom:82px;
+}
+
+.advertising_panel .there_is{
+    text-align: center;
+}
+
+.advertising_panel .there_is:first-child{
+    max-width:24.3%;
+    margin-right:11.2%;
+}
+
+.advertising_panel .there_is:nth-child(2){
+    max-width:26.6%;
+    margin-right:10.8%;
+}
+
+.advertising_panel .there_is:nth-child(1) img{
+    margin-right:1px;
+}
+
+.advertising_panel .there_is:nth-child(3){
+    max-width:26.25%;
+}
+
+.advertising_panel .there_is:nth-child(3) img{
+    margin-top:-3px;
+    margin-right:1px;
+}
+
+.advertising_panel .there_is:nth-child(2) img{
+    margin-bottom:27px;
+}
+
+.advertising_panel .there_is img{
+    margin-bottom:25px;
+}
+
+.advertising_panel .there_is .there_is_name{
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 1.3125em;
+    font-weight: 700;
+    line-height: 21px;
+    text-transform: uppercase;
+    margin-bottom:24px;
+}
+
+.advertising_panel .there_is .there_is_description{
+    color: #333333;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 400;
+    line-height: 21px;
+    text-transform: uppercase;
+}
+
+.search_hotel_in_sedona{
+    padding-top:50px;
+    padding-left:0.15%
+}
+
+.search_hotel_in_sedona .search_hotel_headline{
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 1.875em;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+    margin-bottom:25px;
+}
+
+.search_hotel_in_sedona .search_hotel_description{
+    color: #333333;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    max-width:38%;
+    line-height: 24px;
+    margin:0 auto;
+    margin-bottom:47px;
+}
+
+.search_hotel_in_sedona .search_hotel_button{
+    display:block;
+    text-align: center;
+    width: 47.56%;
+    height: 86px;
+    background-color: #766357;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 1.3125em;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 15px;
+    margin:0 auto;
+    padding-top:35px;
+}
+
+.search_hotel_in_sedona .search_hotel_button:hover{
+    background-color: #604e43;
+}
+
+.search_hotel_in_sedona .search_hotel_button:active{
+    background-color: #503e33;
+}
+
+.map_wrapper{
+    position:relative;
+}
+
+.search_hotel_form{
+    height:395px;
+    width:47.4%;
+    background-color: #ffffff;
+    position:absolute;
+    left:26.33333333333333%;
+    z-index: 2;
+    padding-top:55px;
+    padding-left:4.583333333333333%;
+    display:none;
+}
+
+.search_hotel_form .choose_date{
+    display:flex;
+    align-items: center;
+    margin-bottom:29px;
+}
+
+.search_hotel_form .choose_date p{
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search_hotel_form .arrival p{
+    letter-spacing: 1px;
+    margin-right:3.2%;
+}
+
+.search_hotel_form .departure p{
+    letter-spacing: 1px;
+    margin-right:3%;
+}
+
+.search_hotel_form .choose_date .date{
+    width: 67%;
+    height: 38px;
+    background-color: #f2f2f2;
+    background-image: url("img/calendar.png");
+    background-repeat: no-repeat;
+    background-position: 97.8% 50%;
+    display:flex;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: space-between;
+    padding-left:10px;
+    padding-right:9px;
+}
+
+.search_hotel_form .choose_date .date:hover{
+    background-image: url("img/calendar_hover.png");
+}
+
+.search_hotel_form .choose_date .date:focus{
+    background-image: url("img/calendar_active.png");
+}
+
+.search_hotel_form .adults_and_children{
+    display:flex;
+    margin-bottom:54px;
+}
+
+.search_hotel_form .adults_and_children .adults{
+    display:flex;
+    width:45%;
+    margin-right:10%;
+    align-items:center;
+}
+
+.search_hotel_form .adults_and_children .adults p:first-child{
+    margin-right:19.91150442477876%;
+}
+
+.search_hotel_form .adults_and_children .children p:first-child{
+    margin-right:13.96648044692737%;
+}
+
+.search_hotel_form .adults_and_children .children{
+    width:35%;
+    display:flex;
+    align-items:center;
+}
+
+.search_hotel_form .adults_and_children .control_panel{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width:114px;
+    height:38px;
+    background-color: #f2f2f2;
+}
+
+.search_hotel_form .adults_and_children p{
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.search_hotel_form .adults_and_children .control_panel .plus{
+    width:33.33333333333333%;
+    height:38px;
+    background:url("img/plus.png") no-repeat;
+    background-position: center;
+}
+
+.search_hotel_form .adults_and_children .control_panel .plus:hover{
+    background:url("img/plus_hover.png") no-repeat;
+    background-position: center;
+}
+
+.search_hotel_form .adults_and_children .control_panel .plus:active{
+    background:url("img/plus_active.png") no-repeat;
+    background-position: center;
+}
+
+
+.search_hotel_form .adults_and_children .control_panel .minus{
+    width:33.33333333333333%;
+    height:38px;
+    background:url("img/minus.png") no-repeat;
+    background-position: center;
+}
+
+.search_hotel_form .adults_and_children .control_panel .minus:hover{
+    background:url("img/minus_hover.png") no-repeat;
+    background-position: center;
+}
+
+.search_hotel_form .adults_and_children .control_panel .minus:active{
+    background:url("img/minus_active.png") no-repeat;
+    background-position: center;
+}
+
+.search_hotel_form .search_button{
+    display:block;
+    width: 90%;
+    height: 58px;
+    background-color: #81b3d2;
+    color: #ffffff;
+    font-family: "PT Sans";
+    font-size: 21px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top:17px;
+}
+
+.search_hotel_form .search_button:hover{
+    background-color: #669ec0;
+}
+
+.search_hotel_form .search_button:active{
+    background-color: #5496bd;
+}
+
+.map{
+    height:473px;
+    position:relative;
+    z-index: 1;
+}
+
+.footer{
+    height:120px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:11%;
+    padding-right:8.2%;
+}
+
+.hashteg{
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 1.3125em;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top:-5px;
+}
+
+.hashteg:hover{
+    color: #81b3d2;
+}
+
+.hashteg:active{
+    color:#bdbbbc;
+}
+
+.socials{
+    display:flex;
+    width:150px;
+    justify-content: space-between;
+    margin-left:32px;
+    margin-top:-5px;
+}
+
+.social{
+    width:46px;
+    height:48px;
+    background-color: #81b3d2;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+}
+
+.social:hover{
+    background-color: #669ec0;
+}
+
+.social:active{
+    background-color: #5496bd;
+}
+
+.twitter{
+    background-image: url("img/twitter_icon.png");
+}
+
+.faceboock{
+    background-image: url("img/faceboock_icon.png");
+}
+
+.youtube{
+    background-image: url("img/youtube_icon.png");
+}
+
+.made_in{
+    display:flex;
+    align-items: center;
+    color: #000000;
+    font-family: "PT Sans";
+    font-size: 0.875em;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top:-5px;
+}
+
+.made_in img{
+    margin-left:8px;
+}
+
+@-moz-document url-prefix() {
+    .main_menu a {
+        font-size: 0.8125em;
+    }
+
+    .main_menu a:first-child{
+        margin-right:12.8%;
+    }
+
+    .main_menu a:nth-child(3){
+        margin-right:14.4%;
+    }
+
+    header .decorate_element{
+        left:41.2%;
+    }
+
+    .baner_content{
+        background-position: 51% 48%;
+    }
+
+    .baner_container .baner_content .baner_decorate_element{
+        background-position: 2% 100%;
+        background-size:contain;
+    }
+
+    .about_sedona .about_sedona_headline h2 {
+        max-width: 40.41666666666667%;
+        font-size: 20px;
+        margin-bottom: 36px;
+    }
+
+    .about_sedona .about_sedona_headline {
+        padding-top: 58px;
+        text-align: center;
+    }
+
+    .about_sedona .interesting_facts .title_fact .information{
+        width:33.8%;
+        padding-top:45px;
+    }
+
+    .about_sedona .interesting_facts .title_fact:first-child .information{
+        padding-top:47px;
+    }
+
+    .about_sedona .interesting_facts .title_fact:nth-child(3) .information{
+        width:33%;
+        padding-left:2%;
+        padding-right:2.3%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:first-child .image{
+        width:66.2%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:nth-child(3) .image{
+        width:77%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:first-child .information .facts_headline{
+        margin-bottom:26px;
+    }
+
+    .about_sedona .interesting_facts .title_fact:nth-child(3) .information .facts_headline{
+        max-width: 52%;
+        margin-bottom:27px;
+    }
+
+    .about_sedona .interesting_facts .other_facts .fact .information .facts_headline{
+        margin-bottom:25px;
+    }
+
+    .search_hotel_in_sedona{
+        padding-left:0.8%;
+    }
+
+    .search_hotel_in_sedona .search_hotel_button{
+        width: 48%;
+    }
+
+    .search_hotel_form{
+        width:47.6%;
+        left:26.6%;
+    }
+
+    .made_in img{
+        margin-left:14px;
+    }
+}
+
+@media all and (min-width:1300px){
+    .header_container{
+        padding-right:3%;
+    }
+}
+
+@media all and (max-width:1150px){
+
+    .main_menu a:first-child{
+        margin-right:10%;
+    }
+
+    .main_menu a:nth-child(3){
+        margin-right:11%;
+    }
+}
+
+
+@media all and (max-width:1000px){
+
+    .header_container{
+        padding-left:3.5%;
+        padding-right:3.5%;
+    }
+
+    .main_menu{
+        justify-content: space-between;
+    }
+
+    .main_menu a:first-child{
+        margin-right:0%;
+    }
+
+    .main_menu a:nth-child(2){
+        margin-right:30%;
+    }
+
+    .main_menu a:nth-child(3){
+        margin-right:0%;
+    }
+
+}
+
+
+@media all and (max-width:768px){
+
+    .container{
+        max-width: 768px;
+    }
+
+    .header_container{
+        padding-left:5.989583333333333%;
+        padding-right:5.989583333333333%;
+    }
+
+    .main_menu a{
+        font-size:0.75em;
+    }
+
+    .main_menu a:first-child{
+        margin-right:7.8125%;
+    }
+
+    .main_menu a:nth-child(2){
+        margin-right:31%;
+    }
+
+    .main_menu a:nth-child(3){
+        margin-right:9.63541666666%;
+    }
+
+    header .decorate_element{
+        left:39%;
+    }
+
+    .baner_container{
+        height:485px;
+        background-position: 60% 25%;
+    }
+
+    .baner_content{
+        height:100%;
+        width:100%;
+        background:url("img/text-sedona-index.svg")no-repeat;
+        background-position: 50% 58%;
+        background-size: 60%;
+        padding-top:1.15px;
+    }
+
+    .baner_container .baner_content .baner_decorate_element{
+        height:485px;
+        width:100%;
+        background: url("img/baner_decoration_element768.png") no-repeat center;
+        background-size: 100% 7.628865979381443%;
+        background-position: bottom;
+    }
+
+    .about_sedona .about_sedona_headline{
+        padding-top:56px;
+    }
+
+    .about_sedona .about_sedona_headline h2{
+        max-width:61.5%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:first-child .information{
+        padding-left:3.5%;
+        padding-right:4%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:nth-child(3) .information{
+        padding-left:4.6%;
+        padding-right:4.6%;
+    }
+
+    .about_sedona .interesting_facts .title_fact .information .facts_headline{
+        max-width:100%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:nth-child(3) .information .facts_headline{
+        max-width:100%;
+    }
+
+    .about_sedona .interesting_facts .other_facts .fact .information .facts_headline{
+        max-width: 100%;
+    }
+
+    .about_sedona .interesting_facts .other_facts .fact:nth-child(3) .information .facts_headline{
+        max-width: 75%;
+    }
+
+    .advertising_panel .there_is:first-child{
+        max-width:25.390625%;
+        margin-right:9.765625%;
+    }
+
+    .advertising_panel .there_is:nth-child(2){
+        max-width:25.390625%;
+        margin-right:9.11458333333%;
+    }
+
+    .advertising_panel .there_is:nth-child(3){
+        max-width:26.04166666666%;
+    }
+
+    .search_hotel_in_sedona .search_hotel_description{
+        max-width:61%;
+    }
+
+    .search_hotel_in_sedona .search_hotel_button{
+        width: 73.95833333333%;
+    }
+
+    .search_hotel_form{
+        width: 73.95833333333%;
+        left:13%;
+    }
+
+    .hashteg{
+        font-size: 1em;
+    }
+
+    @-moz-document url-prefix() {
+
+       .main_menu a:first-child{
+           margin-right:6.3%;
+       }
+
+        .about_sedona .about_sedona_headline h2{
+            max-width:63%;
+        }
+
+        .about_sedona .interesting_facts .title_fact:nth-child(3) .information{
+            width:33.8%;
+            padding-left:4.3%;
+            padding-right:4.3%;
+        }
+
+        .about_sedona .interesting_facts .title_fact:nth-child(3) .image{
+            width:66.2%;
+        }
+
+        .search_hotel_form{
+            width: 73.4%;
+            left:13.7%;
+        }
+
+    }
+}
+
+@media all and (max-width:700px){
+
+    .header_container{
+        height:56px;
+    }
+
+    .main_menu{
+        display:none;
+    }
+
+    header .decorate_element{
+        width:103px;
+        height:83px;
+        background:url("img/logo-sedona-mobile.svg")no-repeat;
+        position: absolute;
+        top:0;
+        left:50%;
+        margin-left:-50px;
+    }
+
+    .main_menu_button{
+        display:block;
+        margin-left:90%;
+    }
+
+    .baner_container{
+        background:url("img/bg-back-mobile@2x.jpg")no-repeat;
+        height:389px;
+        background-position: 48% 25%;
+        background-size: cover;
+    }
+
+    .baner_content{
+        height:100%;
+        width:100%;
+        background:url("img/text-sedona-index.svg")no-repeat;
+        background-position: 50% 34%;
+        background-size: 45%;
+        padding-top:9.5px;
+    }
+
+    .baner_container .baner_content .baner_decorate_element{
+        height:380px;
+        background: url("img/baner_decoration_element.png") no-repeat;
+        background-position: 50% 100%;
+    }
+
+    .about_sedona .about_sedona_headline{
+        padding-top:40px;
+        padding-left:10%;
+        padding-right:10%;
+        text-align: center;
+    }
+
+    .about_sedona .about_sedona_headline h2{
+        max-width:100%;
+        margin-bottom:35px;
+    }
+
+    .about_sedona .about_sedona_headline p{
+        max-width:100%;
+        color: #333333;
+        font-family: "PT Sans";
+        font-size: 0.875em;
+        font-weight: 400;
+        line-height: 18px;
+        text-transform: uppercase;
+        margin-bottom:12px;
+    }
+
+    .about_sedona .interesting_facts .title_fact{
+        background-color: #81b3d2;
+        display:block;
+        padding-bottom:5%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:first-child .image{
+        background:url("img/photo-city-mobile@2x.jpg")no-repeat;
+        width:90%;
+        margin:0 auto;
+        background-size:cover;
+    }
+
+    .about_sedona .interesting_facts .title_fact .information{
+        width:100%;
+        min-height:210px;
+    }
+
+    .about_sedona .interesting_facts .fact .information .facts_headline{
+        max-width:90%;
+        width:100%;
+        margin:0 auto;
+        margin-bottom:20px;
+    }
+
+    .about_sedona .interesting_facts .fact .information .facts_description{
+        font-family: "PT Sans";
+        font-size: 0.875em;
+        font-weight: 400;
+        line-height: 21px;
+        text-transform: uppercase;
+        margin:0 auto;
+        max-width:90%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:first-child .trinagle{
+        display:block;
+    }
+
+    .about_sedona .interesting_facts .title_fact:nth-child(3){
+        background-color: #81b3d2;
+        display:flex;
+        flex-direction: column-reverse;
+        padding-bottom:5%;
+    }
+
+    .about_sedona .interesting_facts .title_fact:nth-child(3) .image{
+        background:url("img/photo-bridge-tablet@2x.jpg")no-repeat;
+        width:90%;
+        margin:0 auto;
+        background-size:cover;
+    }
+
+    .advertising_panel{
+        display:block;
+        padding-top:20px;
+        padding-left:6.083333333333333%;
+        padding-right:3.5%;
+        padding-bottom:20px;
+    }
+
+    .advertising_panel .there_is{
+        text-align: left;
+        display:flex;
+        flex-wrap: wrap;
+        margin-right:0;
+        margin-bottom:20px;
+        max-width:100%;
+    }
+
+    .advertising_panel .there_is:first-child{
+        margin-right:0;
+        max-width:100%;
+    }
+
+    .advertising_panel .there_is:nth-child(2){
+        margin-right:0;
+        max-width:100%;
+    }
+
+    .advertising_panel .there_is:nth-child(3){
+        margin-right:0;
+        max-width:100%;
+        margin-bottom:0;
+    }
+
+    .advertising_panel .there_is img{
+        position:absolute;
+        height:40px;
+    }
+
+    .advertising_panel .there_is .there_is_name{
+        padding-top:3%;
+        padding-left:17%;
+        margin-bottom:10px;
+    }
+
+    .advertising_panel .there_is .there_is_description{
+        padding-left:17%;
+    }
+
+    .about_sedona .interesting_facts .other_facts{
+        display:block;
+        background-color: #f2f2f2;
+    }
+
+    .about_sedona .interesting_facts .other_facts .fact{
+        width:100%;
+        border-bottom:1px solid lightgray;
+    }
+
+    .about_sedona .interesting_facts .other_facts .fact .information{
+        min-height: 210px;
+    }
+
+    .search_hotel_in_sedona{
+        padding-left:10%;
+        padding-right:10%;
+    }
+
+    .search_hotel_in_sedona .search_hotel_headline{
+        font-size: 1.5em;
+        line-height: 36px;
+        margin-bottom:25px;
+    }
+
+    .search_hotel_in_sedona .search_hotel_description{
+        font-size: 0.875em;
+        max-width:100%;
+        line-height: 24px;
+        margin-bottom:47px;
+    }
+
+    .search_hotel_in_sedona .search_hotel_button{
+        display:block;
+        width: 100%;
+        font-size: 1em;
+        padding-top:35px;
+    }
+
+    .search_hotel_form{
+        height:395px;
+        width:100%;
+        background-color: #ffffff;
+        position:absolute;
+        left:0;
+        z-index: 2;
+        padding-top:20px;
+        padding-left:0;
+        display:none;
+    }
+
+    .search_hotel_form .choose_date {
+        display:block;
+        margin-bottom:20px;
+    }
+
+    .search_hotel_form .choose_date p {
+        padding-left:10%;
+        margin-bottom:5px;
+        font-size: 1em;
+    }
+
+    .search_hotel_form .choose_date .date{
+        width:90%;
+        margin:0 auto;
+    }
+
+    .search_hotel_form .adults_and_children{
+        display:block;
+        margin-bottom:20px;
+    }
+
+    .search_hotel_form .adults_and_children .adults{
+        display:flex;
+        width:100%;
+        margin-right:0;
+        margin-bottom:20px;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .search_hotel_form .adults_and_children .children{
+        display:flex;
+        width:100%;
+        margin-right:0;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .search_hotel_form .adults_and_children .adults p{
+        font-size: 1em;
+    }
+
+    .search_hotel_form .adults_and_children .children p{
+        font-size: 1em;
+    }
+
+    .search_hotel_form .adults_and_children .adults p:first-child{
+        margin-right:10%;
+    }
+
+    .search_hotel_form .adults_and_children .children p:first-child{
+        margin-right:20%;
+    }
+
+    .search_hotel_form .adults_and_children .control_panel{
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        width:50%;
+        height:50px;
+        background-color: #f2f2f2;
+    }
+
+    .search_hotel_form .search_button{
+        display:block;
+        width: 90%;
+        height: 58px;
+        background-color: #81b3d2;
+        color: #ffffff;
+        font-family: "PT Sans";
+        font-size: 21px;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top:17px;
+        margin:0 auto;
+    }
+
+    .map{
+        height:395px;
+        position:relative;
+        z-index: 1;
+    }
+
+    .footer{
+        height:250px;
+        display:block;
+        padding-left:0;
+        padding-right:0;
+        padding-top:50px;
+    }
+
+    .hashteg{
+        color: #000000;
+        display:block;
+        font-family: "PT Sans";
+        font-size: 1.4em;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-bottom:20px;
+        text-align:center;
+    }
+
+    .socials{
+        display:flex;
+        width:150px;
+        justify-content: space-between;
+        margin:0 auto;
+    }
+
+    .social{
+        width:46px;
+        height:48px;
+        background-color: #81b3d2;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+    }
+
+    .made_in{
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color: #000000;
+        font-family: "PT Sans";
+        font-size: 1em;
+        font-weight: 400;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin-top:20px;
+    }
+
+    .made_in img{
+        margin-left:8px;
+    }
+
+    @-moz-document url-prefix() {
+        .about_sedona .interesting_facts .title_fact:nth-child(3) .information {
+            width: 100%;
+            padding-left: 4.3%;
+            padding-right: 4.3%;
+        }
+    }
+}
+
+.xcalend {
+    position: absolute;
+    z-index: 999;
+    width: 150px;
+    line-height: 1.2em;
+    font-size: 15px;
+    text-align: center;
+    background: #fff;
+    border: 2px solid #ddd;
+    padding: 5px;
+}
+.xcalend td {
+    cursor: pointer;
+    padding: 5px;
+}
+.xcalend thead td {
+    color: #333;
+}
+.xcalend thead tr:last-child td {
+    font-size: 12px;
+    background: #fff;
+    color: #555;
+    cursor: default;
+}
+.xcalend tbody td {
+    color: #025;
+}
+.xcalend tfoot td {
+    color: #333;
+}
+.xcalend tbody td.tday {
+    background: #eee;
+    font-weight: bold;
+}
+.xcalend tbody td:hover, .xcalend td:hover {
+    background: #669ec0;
+    color: #acf;
+}
+.xcalend tbody td:nth-child(n+6) {
+    color: #e78c5c;
+}
+.xcalend .cal-first td:nth-last-child(-n+2) {
+    color: #e78c5c;
+}
+.xcalend tbody td.today {
+    background: #5496bd;
+    color: #fff;
+    font-weight: bold;
+}
+.xcalend tbody td.bold {
+    font-weight: bold;
+}
+.xcalend tbody td.cal-l b, .xcalend tbody td.cal-r b {
+    display: none;
+}
+.xcalend tbody td.cal-l:hover b, .xcalend tbody td.cal-r:hover b {
+    display: inline;
+}
+.xcalend a {
+    text-decoration: none;
+}
+.xcalend th a {
+    color: #ccc;
+    display: block;
+    padding: 5px 0;
+}
